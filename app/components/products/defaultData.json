@@ -1,0 +1,75 @@
+{
+    "products": [
+      {
+        "id": "1",
+        "name": "Advanced Surgical Operation Table",
+        "description": "Experience the pinnacle of surgical precision and patient comfort with our advanced operation table. Equipped with intelligent positioning system and radiolucent design.",
+        "rating": 4.8,
+        "price": 9999.99,
+        "inStock": true,
+        "manufacturer": "MedTech Solutions",
+        "dimensions": {
+          "length": 200,
+          "width": 80,
+          "height": 110
+        }
+      },
+      {
+        "id": "2",
+        "name": "Versatile Multi-functional Operation Table",
+        "description": "Maximize versatility and streamline surgical procedures with our multi-functional operation table. Easily adaptable for various specialties with interchangeable attachments.",
+        "rating": 4.5,
+        "price": 7999.99,
+        "inStock": true,
+        "manufacturer": "HealthTech Innovations",
+        "dimensions": {
+          "length": 190,
+          "width": 75,
+          "height": 105
+        }
+      },
+      {
+        "id": "3",
+        "name": "Ergonomic Electric Operation Table",
+        "description": "Effortlessly adjust the height and position of the table for optimal surgeon comfort and precise control. Enhance efficiency with intuitive control panel and durable construction.",
+        "rating": 4.7,
+        "price": 6499.99,
+        "inStock": true,
+        "manufacturer": "SurgiEquip",
+        "dimensions": {
+          "length": 180,
+          "width": 70,
+          "height": 100
+        }
+      },
+      {
+        "id": "4",
+        "name": "Pediatric Operation Table",
+        "description": "Designed specifically for pediatric surgeries, this operation table ensures the highest level of safety, comfort, and flexibility for young patients and medical staff.",
+        "rating": 4.6,
+        "price": 4999.99,
+        "inStock": false,
+        "manufacturer": "Pedimed",
+        "dimensions": {
+          "length": 160,
+          "width": 60,
+          "height": 95
+        }
+      },
+      {
+        "id": "5",
+        "name": "Mobile Operation Table",
+        "description": "Experience enhanced mobility and stability with this mobile operation table. Designed for easy maneuverability and patient transfer within the operating room or medical departments.",
+        "rating": 4.3,
+        "price": 3499.99,
+        "inStock": true,
+        "manufacturer": "Mobitech Solutions",
+        "dimensions": {
+          "length": 170,
+          "width": 65,
+          "height": 100
+        }
+      }
+    ]
+  }
+  

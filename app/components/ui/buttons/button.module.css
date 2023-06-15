@@ -1,0 +1,127 @@
+.button-base {
+    display: flex;
+    position: relative;
+    overflow: hidden;   
+    align-items: center;
+    padding: 0.5rem 1rem;
+    margin: 5px;
+    outline: none;
+    border: 0;
+    box-shadow: var(--shadow-0);
+    cursor: pointer;
+    border-radius: 2px;
+    user-select: none;
+    text-transform: capitalize;
+    transition: 200ms;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.button-size-small {
+    font-size: 1rem;
+    padding: 0.4rem 0.9rem;
+}
+.button-size-medium {
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+}
+.button-size-large {
+    font-size: 1.5rem;
+    padding: 0.7rem 1.2rem;
+}
+/* end Icon */
+.endIcon {
+    display: grid;
+    place-items: center;
+    margin-left: 0.5rem;
+}
+.startIcon{
+    display: grid;
+    place-items: center;
+    margin-right: 0.5rem;
+}
+/* default */
+.button-default {
+    font-weight: 700;
+    background-color: transparent;
+    box-shadow: none;
+}
+.button-default:hover {
+    filter: brightness(99%);
+}
+.primary-default:hover {
+    color: var(--primary-dark);
+    background-color: rgba(var(--primary-rgb), 0.1);
+}
+.secondary-default {
+    background-color: rgba(var(--secondary-rgb), 0.1);
+    color: var(--secondary-dark);
+}
+/* filled */
+.primary-filled {
+    background-color: var(--primary);
+}
+.primary-filled:hover {
+    background-color: var(--primary-dark);
+}
+.secondary-filled {
+    background-color: var(--secondary);
+}
+.secondary-filled:hover {
+    background-color: var(--secondary-dark);
+}
+/* outlined */
+.button-outlined {
+    font-weight: 700;
+    background-color: var(--background-main);
+    padding: 0.45rem 1rem;
+}
+.button-outlined:hover {
+    filter: brightness(110%);
+}
+.primary-outlined {
+    border: 2.5px solid var(--primary);
+    color: var(--primary);
+}
+.secondary-outlined {
+    border: 2.5px solid var(--secondary);
+    color: var(--secondary);
+}
+/* FAB */
+.button-fab {
+    border-radius: 2rem;
+    padding: 0.5rem 1.2rem;
+    box-shadow: var(--shadow-4);
+}
+.primary-fab {
+    background-color: var(--primary);
+}
+.primary-fab:hover {
+    background-color: var(--primary-dark);
+}
+.secondary-fab {
+    background-color: var(--secondary);
+}
+.secondary-fab:hover {
+    background-color: var(--secondary-dark);
+}
+/* ripple */
+.ripple {
+    position: absolute; 
+    border-radius: 50%;
+    transform: scale(0);
+    background-color: rgba(255, 255, 255, 0.4);
+    animation: ripple-animation var(--timing) linear;
+}
+.ripple-primary {
+    background-color: rgba(var(--primary-rgb), 0.6);
+}
+.ripple-secondary {
+    background-color: rgba(var(--secondary-rgb), 0.6);
+}
+@keyframes ripple-animation {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}  
+/* ripple */

@@ -1,0 +1,67 @@
+/* image styles */
+.image-container {
+    position: relative;
+    z-index: 4;
+    width: 60%;
+    height: 60%;
+    aspect-ratio: 1.4 / 1;
+    box-shadow: var(--shadow-4);
+}
+.image-container img {
+    z-index: 4;
+}
+.text-border {
+    position: absolute;
+    z-index: 1;
+    padding: 2rem 3.5rem;
+    background-color: var(--background-main);
+    text-transform: capitalize;
+    box-shadow: var(--shadow-card-primary);
+    color: transparent;
+    border: 3px solid var(--background-main);
+}
+.text-border-primary {
+    border: 3px solid var(--primary);
+}
+.text-border-secondary {
+    border: 3px solid var(--secondary);
+}
+.text-border-orientation-top {
+    top: -10%;
+}
+.text-border-orientation-bottom {
+    bottom: -10%
+}
+.text-border-orientation-left {
+    right: -15%;
+}
+.text-border-orientation-right {
+    left: -15%
+}
+
+.image-text{
+    position: absolute;
+    z-index: 5;
+    padding: 1rem 2rem;
+    background-color: var(--background-main);
+    text-transform: capitalize;
+    box-shadow: var(--shadow-3);
+}
+.image-text-primary {
+    background-color: var(--primary);
+}
+.image-text-secondary {
+    background-color: var(--secondary);
+}
+.image-text-orientation-top {
+    top: -5%;
+}
+.image-text-orientation-bottom {
+    bottom: -5%
+}
+.image-text-orientation-left {
+    right: -10%;
+}
+.image-text-orientation-right {
+    left: -10%
+}

@@ -1,0 +1,32 @@
+
+.container { 
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(var(--secondary-rgb), 0.4);    
+    box-shadow: var(--shadow-3);
+    max-width: 300px;
+}
+
+.text {
+    font-weight: 600;
+}
+
+.image {
+    position: relative;
+    height: 170px;
+    width: auto;
+    max-width: 300px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+.button-grp {
+    display: flex;
+    gap: 0.5rem;
+}

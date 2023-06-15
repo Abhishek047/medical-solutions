@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    gap: 2rem;
+}
+.content {
+    flex-basis: 40%;
+}
+.button-grp {
+    display: flex;
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+.graphics{
+    flex-grow: 1;
+    margin-left: 5rem;
+}
+.feature-container {
+    margin-top: -40px;
+    margin-left: -20px;
+    position: relative;
+    z-index: 10;
+}
+.feature-container-line {
+    position: absolute;
+    z-index: 10;
+    top: -30%;
+    left: -2rem;
+    width: 5px;
+    height: 118%;
+    border-radius: 2px 2px 0 0;
+}
+.feature-container-line-primary {
+    background-color: var(--primary);
+}
+.feature-container-line-secondary {
+    background-color: var(--secondary);
+}
+.feature-container-line::before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    top: 0%;
+    left: 0;
+    width: 3.3rem;
+    height: 5px;
+    border-radius: 2px;
+    background-color: inherit;
+}

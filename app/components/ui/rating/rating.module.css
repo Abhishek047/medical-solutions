@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    gap: 0.3rem;
+}
+
+.star {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    width: 1.2rem;
+    height: 1.2rem;
+    position: relative;
+    z-index: 3;
+    background-color: rgba(192,192,192, 0.8);
+}
+
+.fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1;
+    background-color: var(--rating);
+}
