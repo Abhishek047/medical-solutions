@@ -18,16 +18,16 @@ const Products = () => {
             </Typography>
             <div className={productStyles['products-container']}>
               {
-                productsWithImg.map(product => (
+                productsWithImg.slice(0,4).map(product => (
                 <div key={product.id} className={productStyles['product-item']}>
                   <ProductCard 
-                    name={productsWithImg[0].name} 
-                    img={productsWithImg[0].img} 
+                    name={product.name} 
+                    img={product.img} 
                     color='secondary' 
-                    rating={productsWithImg[0].rating} 
-                    manufacturer={productsWithImg[0].manufacturer}
-                    dimensions={productsWithImg[0].dimensions}
-                    price={productsWithImg[0].price}
+                    rating={product.rating} 
+                    manufacturer={product.manufacturer}
+                    dimensions={product.dimensions}
+                    price={product.price}
                   />
                 </div>
                 ))

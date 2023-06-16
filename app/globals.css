@@ -1,10 +1,14 @@
 :root {
   --primary: #b799ff;
-  --primary-dark: rgb(128, 107, 178);
+  --primary-light: #eae0ff;
+  --primary-dark: #806bb2;
   --primary-rgb: 183, 153, 255;
+  --primary-light-rgb: 234, 224, 255;
   --primary-dark-rgb: 128, 107, 178;
   --secondary: #acbcff;
   --secondary-rgb: 172, 188, 255;
+  --secondary-light: rgb(230, 235, 255);
+  --secondary-light-rgb: 230, 235, 255;
   --secondary-dark: rgb(120, 131, 178);
   --secondary-dark-rgb: 120, 131, 178;
   --primary-blue: #AEE2FF;
@@ -13,10 +17,12 @@
   --primary-text: #0F110C;
   --black: #484A47;
   --background-main: #ffffff;
+  --background-dark-main: #EAE0FF;
   --error: #FA360A;
   --success: #00BD56;
   --info: #207DFF;
   --rating: #ffe234;
+  --tooltip-radius: 0.5rem;
   /* Shadows */
   --shadow-0: 0 2px 4px 0 rgba(0, 0, 0, .13), 0 1px 1px 0 rgba(0, 0, 0, .11);
   --shadow-0-1: 0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12);
@@ -34,13 +40,40 @@
   /* Shadows */
   --timing: 400ms;
 }
+.icon__base {
+  width: 24px;
+  height: 24px;
+}
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: var(--primary-text);
   }
-  .nav-bar-margin {
-    margin-top: 4rem;
-  }
-  
+.nav-bar-margin {
+  margin-top: 4rem;
+}
+.tippy-box[data-theme~='primary'] {
+  background-color: rgba(var(--secondary-blue-rgb), 0.3);
+  border-radius: var(--tooltip-radius);
+}
+.tippy-box[data-theme~='primary'] > .tippy-arrow::before {
+  transform: scale(0.8);
+}
+.tippy-box[data-theme~='primary'][data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: var(--secondary-blue);
+}
+.tippy-box[data-theme~='primary'][data-placement^='bottom'] > .tippy-arrow::before {
+  border-bottom-color: var(--secondary-blue);
+}
+.tippy-box[data-theme~='primary'][data-placement^='left'] > .tippy-arrow::before {
+  border-left-color: var(--secondary-blue);
+}
+.tippy-box[data-theme~='primary'][data-placement^='right'] > .tippy-arrow::before {
+  border-right-color: var(--secondary-blue);
+}
+.tippy-box[data-theme~='primary'] .tippy-content{
+    background-color: var(--secondary-blue);
+    border-radius: var(--tooltip-radius);
+    padding: 0.35rem;
+    padding-bottom: none;
+}

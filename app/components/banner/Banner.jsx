@@ -22,7 +22,7 @@ export const Banner = () => {
             <Typography type="h2" color='primary' fontWeight={600}>
                 Revolutionize Medical Solutions
             </Typography>
-            <Typography type="h5" color='primary'>
+            <Typography type="h5">
                 <q>
                     Discover Cutting-Edge Products and Operation Tables for Optimal Healthcare
                 </q>

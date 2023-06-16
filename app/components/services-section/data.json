@@ -1,0 +1,70 @@
+{
+  "groups": [
+    {
+      "id": "1",
+      "name": "Equipment Solutions",
+      "description": "Our Equipment Solutions group offers a comprehensive range of medical equipment designed to meet the needs of healthcare professionals. We provide top-quality products and expert guidance to ensure that you have access to the latest and most effective medical equipment solutions.",
+      "subgroups": [
+        {
+          "id": "1",
+          "name": "Sales and Consultation",
+          "description": "Our Sales and Consultation services are designed to assist you in selecting the right medical equipment for your specific requirements. Our experienced team will guide you through the purchasing process, offering valuable insights and recommendations to help you make informed decisions."
+        },
+        {
+          "id": "2",
+          "name": "Installation and Setup",
+          "description": "Our Installation and Setup services ensure that your medical equipment is properly installed and configured for optimal performance. Our technicians are skilled in the installation process, ensuring seamless integration and functionality, and providing training on equipment operation."
+        },
+        {
+          "id": "3",
+          "name": "Maintenance and Repair",
+          "description": "We understand the importance of keeping your medical equipment in peak condition. Our Maintenance and Repair services offer scheduled maintenance, calibration, and prompt repair services to ensure that your equipment operates reliably and accurately."
+        },
+        {
+          "id": "4",
+          "name": "Upgrades and Customization",
+          "description": "We offer Upgrades and Customization services to meet your evolving needs. Whether you require equipment upgrades to enhance functionality or custom solutions tailored to your specific requirements, our team will work closely with you to deliver the right solutions."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Support and Training",
+      "description": "Our Support and Training services are designed to provide ongoing assistance and knowledge to help you maximize the benefits of your medical equipment.",
+      "subgroups": [
+        {
+          "id": "5",
+          "name": "Technical Support",
+          "description": "Our Technical Support team is available to assist you with any technical issues you may encounter. From troubleshooting assistance to software updates, we are dedicated to ensuring that your equipment operates smoothly and efficiently."
+        },
+        {
+          "id": "6",
+          "name": "Training Programs",
+          "description": "Our Training Programs offer comprehensive training sessions to equip healthcare professionals with the skills and knowledge to effectively operate our medical equipment. We provide on-site training as well as online training resources for your convenience."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Additional Services",
+      "description": "In addition to our core services, we offer a range of additional services to support your medical equipment needs.",
+      "subgroups": [
+        {
+          "id": "7",
+          "name": "Rental and Leasing",
+          "description": "Our Rental and Leasing services provide flexible options for accessing medical equipment on a short-term or long-term basis. This allows you to fulfill your equipment requirements without the need for a substantial upfront investment."
+        },
+        {
+          "id": "8",
+          "name": "Disposal and Recycling",
+          "description": "We offer responsible Disposal and Recycling services for outdated or non-functional medical equipment. We ensure compliance with environmental regulations and provide secure and environmentally friendly disposal solutions."
+        },
+        {
+          "id": "9",
+          "name": "Demonstrations",
+          "description": "We conduct product demonstrations and actively participate in exhibitions to showcase the capabilities of our medical equipment. These platforms offer an opportunity for you to experience our products firsthand and learn more about their features and benefits."
+        }
+      ]
+    }
+  ]
+}

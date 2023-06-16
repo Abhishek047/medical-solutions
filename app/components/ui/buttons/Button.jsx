@@ -1,7 +1,7 @@
 'use client'
 import { getColorName } from '@/app/utils/getColorName';
 import buttonStyles from './button.module.css';
-import {  useLayoutEffect, useState, useRef } from 'react';
+import {  useLayoutEffect, useState, useRef, forwardRef } from 'react';
 
 const BUTTON_TYPES = ['default', 'filled', 'outlined', 'fab']
 const SIZES = ['small', 'medium', 'large']
@@ -24,7 +24,7 @@ const useDebouncedRippleCleanUp = (rippleCount, duration, cleanUpFunction) => {
 };
 
 
-const Button = ({type: selectedType, color: selectedColor, children, endIcon: EndIcon, startIcon: StartIcon,className, onClick = () => {}, size: selectedSize = 'medium', ...props}) => {
+const Button = forwardRef(({type: selectedType, color: selectedColor, children, endIcon: EndIcon, startIcon: StartIcon,className, onClick = () => {}, size: selectedSize = 'medium', ...props}, ref) => {
   const [ripples, setRipples] = useState([]);
   const type = BUTTON_TYPES.includes(selectedType) ? selectedType : BUTTON_TYPES[0];
   const color = getColorName(selectedColor);
@@ -68,6 +68,6 @@ const Button = ({type: selectedType, color: selectedColor, children, endIcon: En
       {!!EndIcon && <span className={buttonStyles.endIcon}>{EndIcon}</span>}
     </button>
   )
-}
+});
 
 export default Button

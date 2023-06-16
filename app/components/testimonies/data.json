@@ -1,0 +1,50 @@
+{
+    "testimonials": [
+      {
+        "id": "1",
+        "name": "Dr. Priya Sharma",
+        "designation": "Surgeon",
+        "testimonial": "The operation table from this company has revolutionized my surgical procedures. It offers exceptional precision and versatility. I highly recommend it to my fellow surgeons.",
+        "rating": 4.8,
+        "location": "Delhi",
+        "hospital": "ABC Hospital"
+      },
+      {
+        "id": "2",
+        "name": "Dr. Rajesh Singh",
+        "designation": "Anesthesiologist",
+        "testimonial": "I'm extremely impressed with the quality and functionality of their medical equipment. The operation table provides optimal patient comfort and ergonomic positioning. Truly a game-changer.",
+        "rating": 4.5,
+        "location": "Mumbai",
+        "hospital": "XYZ Hospital"
+      },
+      {
+        "id": "3",
+        "name": "Dr. Aishwarya Patel",
+        "designation": "Pediatrician",
+        "testimonial": "The pediatric operation table from this company has exceeded my expectations. It's designed with utmost attention to detail, ensuring the safety and comfort of our young patients. Highly recommended.",
+        "rating": 4.7,
+        "location": "Chennai",
+        "hospital": "PQR Hospital"
+      },
+      {
+        "id": "4",
+        "name": "Dr. Anand Verma",
+        "designation": "Orthopedic Surgeon",
+        "testimonial": "The mobility and stability of their mobile operation table have greatly improved my surgical workflow. It's a reliable and well-built product that I rely on for successful orthopedic procedures.",
+        "rating": 4.6,
+        "location": "Bangalore",
+        "hospital": "LMN Hospital"
+      },
+      {
+        "id": "5",
+        "name": "Dr. Neha Gupta",
+        "designation": "Cardiologist",
+        "testimonial": "The operation table provided by this company has been a valuable addition to our cardiac unit. It offers seamless integration with imaging technology and ensures optimal positioning for intricate procedures. Impressed with the quality.",
+        "rating": 4.3,
+        "location": "Kolkata",
+        "hospital": "DEF Hospital"
+      }
+    ]
+  }
+  

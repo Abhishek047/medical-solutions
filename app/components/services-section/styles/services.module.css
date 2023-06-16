@@ -1,13 +1,12 @@
-.container {
-    margin: 5rem 0;
+.service-section {
+    margin: 2rem 0;
 }
-
-.products-container {
+.feature-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     gap: 1.5rem;
 }
-.product-item {
+.card-item {
     display: flex;
     flex-grow: 1;
 }

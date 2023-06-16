@@ -1,3 +1,4 @@
+import { forwardRef } from 'react';
 import typographyStyles from './typography.module.css';
 
 const TYPES = {
@@ -14,12 +15,14 @@ const TYPES = {
     caption: 'span'
   };
 
-export const Typography = ({component = 'p', type='body1', color='text', children, gutterBottom = true, fontWeight, className, ...props}) => {
+export const Typography = forwardRef(({component = 'p', type='body1', color='text', children, gutterBottom = true, fontWeight, className, ...props}, ref) => {
   
     const Component =  component ? component : TYPES[type] ? TYPES[type] : 'p';
 
     return (
-    <Component className={
+    <Component
+    ref={ref} 
+    className={
         `${typographyStyles[`typography--variant-${type}`]} 
          ${typographyStyles[`typography--base`]}
          ${typographyStyles[`typography--${color}`]}
@@ -32,4 +35,4 @@ export const Typography = ({component = 'p', type='body1', color='text', childre
         {children}
     </Component>
   )
-}
+});
