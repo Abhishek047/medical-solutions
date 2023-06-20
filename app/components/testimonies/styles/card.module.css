@@ -1,0 +1,45 @@
+.container {
+    --half-padding: 1rem;
+    width: 300px;
+    background-color: var(--primary);
+    padding: var(--half-padding);
+    text-align: center;
+    border-radius: var(--border-radius);
+    cursor: default;
+    transition: 0.2s ease-in-out;
+    margin: 0 auto;
+}
+.container:hover {
+    box-shadow: var(--shadow-1);
+    transform: scale(1.01);
+}
+.container:hover .testimony{
+    box-shadow: var(--shadow-2);
+}
+.testimony {
+    transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    padding: var(--half-padding);
+    border-radius: var(--border-radius);
+    background-color: var(--background-main);
+    padding-bottom: 1.7rem;
+}
+.imageContainer {
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+    background-color: var(--background-main);
+    margin: 0 auto;
+    transform: translateY(-70%);
+    margin-bottom: -2rem;
+    overflow: hidden;
+    box-shadow: var(--shadow-1);
+}
+.testimonyDetails {
+    padding: var(--half-padding);
+    border-radius: var(--border-radius);
+}
+.details {
+    display: flex;
+    flex-direction: column;
+}

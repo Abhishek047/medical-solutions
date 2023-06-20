@@ -1,0 +1,89 @@
+.container {
+    --item-distance: 0.3rem;
+    background-color: var(--black);
+    color: var(--background-main);
+    padding-bottom: 4rem;
+}
+
+.heading {
+    background-color: var(--primary);
+    width: fit-content;
+    padding: 1rem 1.5rem;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    z-index: 0;
+    position: relative;
+    color: var(--primary-text);
+}
+.heading::before {
+    position: absolute;
+    content: '';
+    height: 20%;
+    width: 20%;
+    border-radius: 0 var(--border-radius) 0 0;
+    background-color: transparent;
+    z-index: 1;
+    top: 0%;
+}
+.heading::before {
+    left: -20%;
+    box-shadow: 20px 0px var(--primary);
+}
+.heading::after {
+    position: absolute;
+    content: '';
+    height: 20%;
+    width: 20%;
+    border-radius: var(--border-radius) 0 0 0;
+    background-color: transparent;
+    z-index: 1;
+    top: 0%;
+}
+.heading::after {
+    right: -20%;
+    box-shadow: -20px 0px var(--primary);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+}
+.item {
+    display: flex;
+    flex-grow: 1;
+}
+.about {
+    max-width: 300px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+.icon-pack {
+    margin: var(--item-distance) 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.image-container {
+    width: 18px;
+    height: 18px;
+    position: relative;
+}
+
+.link-itemsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--item-distance);
+}
+.link-item {
+    cursor: pointer;
+    display: flex;
+    gap: var(--item-distance);
+    align-items: center;
+}
+.link-item:hover {
+    color: var(--primary);
+}

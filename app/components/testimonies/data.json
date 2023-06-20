@@ -7,7 +7,8 @@
         "testimonial": "The operation table from this company has revolutionized my surgical procedures. It offers exceptional precision and versatility. I highly recommend it to my fellow surgeons.",
         "rating": 4.8,
         "location": "Delhi",
-        "hospital": "ABC Hospital"
+        "hospital": "ABC Hospital",
+        "image": "https://randomuser.me/api/portraits/med/men/75.jpg"
       },
       {
         "id": "2",
@@ -16,7 +17,8 @@
         "testimonial": "I'm extremely impressed with the quality and functionality of their medical equipment. The operation table provides optimal patient comfort and ergonomic positioning. Truly a game-changer.",
         "rating": 4.5,
         "location": "Mumbai",
-        "hospital": "XYZ Hospital"
+        "hospital": "XYZ Hospital",
+        "image": "https://randomuser.me/api/portraits/med/men/72.jpg"
       },
       {
         "id": "3",
@@ -25,6 +27,7 @@
         "testimonial": "The pediatric operation table from this company has exceeded my expectations. It's designed with utmost attention to detail, ensuring the safety and comfort of our young patients. Highly recommended.",
         "rating": 4.7,
         "location": "Chennai",
+        "image": "https://randomuser.me/api/portraits/med/men/15.jpg",
         "hospital": "PQR Hospital"
       },
       {
@@ -34,7 +37,8 @@
         "testimonial": "The mobility and stability of their mobile operation table have greatly improved my surgical workflow. It's a reliable and well-built product that I rely on for successful orthopedic procedures.",
         "rating": 4.6,
         "location": "Bangalore",
-        "hospital": "LMN Hospital"
+        "hospital": "LMN Hospital",
+        "image": "https://randomuser.me/api/portraits/med/men/55.jpg"
       },
       {
         "id": "5",
@@ -43,7 +47,8 @@
         "testimonial": "The operation table provided by this company has been a valuable addition to our cardiac unit. It offers seamless integration with imaging technology and ensures optimal positioning for intricate procedures. Impressed with the quality.",
         "rating": 4.3,
         "location": "Kolkata",
-        "hospital": "DEF Hospital"
+        "hospital": "DEF Hospital",
+        "image": "https://randomuser.me/api/portraits/med/men/65.jpg"
       }
     ]
   }

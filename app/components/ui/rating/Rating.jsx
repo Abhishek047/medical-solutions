@@ -8,7 +8,7 @@ import { Typography } from '../typography/Typography';
 export const Rating =  forwardRef(({value = 0, max = 5, width = '1rem', height = '1rem', showTooltip = true}, ref) => {
   return (
     <Tippy interactive theme='primary' content={
-      <Typography gutterBottom={false} type='caption'>
+      <Typography gutterBottom={false} color='text' type='caption'>
         {value} / {max}
       </Typography>
     } disabled={!showTooltip}>

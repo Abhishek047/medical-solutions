@@ -15,7 +15,7 @@ const TYPES = {
     caption: 'span'
   };
 
-export const Typography = forwardRef(({component = 'p', type='body1', color='text', children, gutterBottom = true, fontWeight, className, ...props}, ref) => {
+export const Typography = forwardRef(({component = 'p', type='body1', color='', children, gutterBottom = true, fontWeight, className, ...props}, ref) => {
   
     const Component =  component ? component : TYPES[type] ? TYPES[type] : 'p';
 

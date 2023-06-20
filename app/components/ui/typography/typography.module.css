@@ -38,17 +38,17 @@
 }
 
 .typography--variant-h5 {
-    font-size: min(1.5rem, 8vw);
+    font-size: min(1.7rem, 8vw);
     font-weight: 500;
 }
 
 .typography--variant-h6 {
-    font-size: min(1.25rem, 7vw);
+    font-size: min(1.35rem, 7vw);
     font-weight: 500;
 }
 
 .typography--variant-subheading1 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 500;
 }
 
