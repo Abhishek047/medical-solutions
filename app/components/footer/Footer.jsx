@@ -6,6 +6,7 @@ import mail from '../../../public/images/gmail-logo.svg';
 import address from '../../../public/images/address-book.svg';
 import Image from 'next/image';
 import { BookOpen, Box, FileText, Lock, Phone } from 'react-feather';
+import { FooterHeading } from './FooterHeading';
 
 const CONTACTS = [
   {
@@ -49,11 +50,7 @@ const Footer = () => {
   return (
     <div className={styles.container}>
       <div className={`${global['global--container__main']}`}>
-        <div className={styles.heading}>
-          <Typography gutterBottom={false} type="h3">
-            Stay Connected with Us
-          </Typography>
-        </div>
+        <FooterHeading />
         <div className={styles.content}>
           <div className={styles.item}>
             <div className={styles.about}>
@@ -86,7 +83,7 @@ const Footer = () => {
             <div className={styles['linksContainer']}>
               <Typography type="subheading1">Services</Typography>
               {LINKS.map((link) => (
-                <div className={styles['link-item']}>
+                <div key={link.text} className={styles['link-item']}>
                   <div className={styles['link-icon']}>
                     <link.Icon className={styles['image-container']}/>
                   </div>

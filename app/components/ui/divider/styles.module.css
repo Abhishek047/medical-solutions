@@ -1,0 +1,12 @@
+.divider {
+    width: 98%;
+    margin: 0 auto;
+    height: 2px;
+    border-radius: var(--border-radius);
+    background-color: var(--grey);
+    box-shadow: var(--shadow);
+}
+.marginY {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

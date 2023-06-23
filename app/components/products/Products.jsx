@@ -21,6 +21,7 @@ const Products = () => {
                 productsWithImg.slice(0,4).map(product => (
                 <div key={product.id} className={productStyles['product-item']}>
                   <ProductCard 
+                    id={product.id}
                     name={product.name} 
                     img={product.img} 
                     color='secondary' 

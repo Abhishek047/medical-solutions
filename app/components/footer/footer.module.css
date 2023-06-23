@@ -6,13 +6,16 @@
 }
 
 .heading {
-    background-color: var(--primary);
+    background-color: var(--background-main);
     width: fit-content;
     padding: 1rem 1.5rem;
     border-radius: 0 0 var(--border-radius) var(--border-radius);
     z-index: 0;
     position: relative;
     color: var(--primary-text);
+}
+.coloredHeading {
+    background-color: var(--primary);
 }
 .heading::before {
     position: absolute;
@@ -25,6 +28,10 @@
     top: 0%;
 }
 .heading::before {
+    left: -20%;
+    box-shadow: 20px 0px var(--background-main);
+}
+.coloredHeading::before {
     left: -20%;
     box-shadow: 20px 0px var(--primary);
 }
@@ -39,6 +46,10 @@
     top: 0%;
 }
 .heading::after {
+    right: -20%;
+    box-shadow: -20px 0px var(--background-main);
+}
+.coloredHeading::after {
     right: -20%;
     box-shadow: -20px 0px var(--primary);
 }
