@@ -22,7 +22,7 @@ const SERVICES = [
 export const Services = () => {
   
   return (
-    <section className={styles['service-section']}>
+    <div className={styles['service-section']}>
       <Typography type="h3">Our Services</Typography>
       <Typography type="h6">
         Comprehensive Solutions for Your Medical Equipment Needs
@@ -40,6 +40,6 @@ export const Services = () => {
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 };

@@ -6,7 +6,7 @@ import { Typography } from '../ui/typography/Typography';
 const Testimonial = () => {
   const testimonies = testimonyData.testimonials.slice(0, 3);
   return (
-    <section className={styles.container}>
+    <div className={styles.container}>
       <Typography type="h3"> Words of Delight</Typography>
       <Typography type="h6">"Hear from Our Satisfied Customers</Typography>
 
@@ -24,7 +24,7 @@ const Testimonial = () => {
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -8,7 +8,7 @@ const Products = () => {
   const productsWithImg = allProducts.products.map((prod) => ({...prod, img: table}));
 
   return (
-    <section>
+    <div>
         <div className={productStyles.container}>
             <Typography type="h3">
                 Top selling products
@@ -35,7 +35,7 @@ const Products = () => {
               }
             </div>
         </div>
-    </section>
+    </div>
   )
 }
 export default Products;

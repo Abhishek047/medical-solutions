@@ -1,0 +1,7 @@
+.dialog-container {
+  position: absolute;
+  z-index: var(--dialog-z-index);
+}
+.dialog-content {
+  padding: 2rem;
+}

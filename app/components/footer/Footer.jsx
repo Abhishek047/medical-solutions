@@ -1,3 +1,4 @@
+'use client';
 import { Typography } from '../ui/typography/Typography';
 import styles from './footer.module.css';
 import global from '../../global.module.css';
@@ -7,6 +8,7 @@ import address from '../../../public/images/address-book.svg';
 import Image from 'next/image';
 import { BookOpen, Box, FileText, Lock, Phone } from 'react-feather';
 import { FooterHeading } from './FooterHeading';
+import { useModalContext } from '@/app/context/contactModalContext';
 
 const CONTACTS = [
   {
@@ -23,7 +25,7 @@ const CONTACTS = [
   },
 ];
 
-const LINKS = [
+const LINKS_STATIC = [
   {
     text: 'Products',
     Icon: Box,
@@ -47,9 +49,23 @@ const LINKS = [
 ];
 
 const Footer = () => {
+  const { openModal } = useModalContext();
+
+  const LINKS = LINKS_STATIC.map((item) => {
+    return item.text === 'Contact'
+      ? {
+          ...item,
+          handler: openModal,
+        }
+      : {
+          ...item,
+          handler: () => {},
+        };
+  });
+
   return (
     <div className={styles.container}>
-      <div className={`${global['global--container__main']}`}>
+      <div className={`${global['global__container--main']}`}>
         <FooterHeading />
         <div className={styles.content}>
           <div className={styles.item}>
@@ -83,9 +99,13 @@ const Footer = () => {
             <div className={styles['linksContainer']}>
               <Typography type="subheading1">Services</Typography>
               {LINKS.map((link) => (
-                <div key={link.text} className={styles['link-item']}>
+                <a
+                  key={link.text}
+                  onClick={link.handler}
+                  className={styles['link-item']}
+                >
                   <div className={styles['link-icon']}>
-                    <link.Icon className={styles['image-container']}/>
+                    <link.Icon className={styles['image-container']} />
                   </div>
                   <Typography
                     key={link.text}
@@ -94,7 +114,7 @@ const Footer = () => {
                   >
                     {link.text}
                   </Typography>
-                </div>
+                </a>
               ))}
             </div>
           </div>

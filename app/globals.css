@@ -26,6 +26,7 @@
   --border-radius: 0.5rem;
   /* Shadows */
   --shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.02);
+  --shadow-vertical: 2px 0px 1px 0px rgba(0, 0, 0, 0.02);
   --shadow-0: 0 2px 4px 0 rgba(0, 0, 0, 0.13), 0 1px 1px 0 rgba(0, 0, 0, 0.11);
   --shadow-0-1: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12);
   --shadow-1: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -50,6 +51,8 @@
     8px 8px 0 0 var(--secondary);
   /* Shadows */
   --timing: 400ms;
+  --nav-z-index: 100;
+  --dialog-z-index: 1000;
 }
 .icon__base {
   width: 24px;
@@ -64,10 +67,14 @@ a {
   text-decoration: none;
   color: inherit;
 }
-.global--container__main {
+.global__container--main {
   width: 90%;
   min-height: 70vh;
   margin: 0 auto;
+}
+.global__section-divider {
+  margin-top: 3.5em;
+  margin-bottom: 3.5em;
 }
 body {
   overflow-x: hidden;

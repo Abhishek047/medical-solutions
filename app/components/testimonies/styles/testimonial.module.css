@@ -1,25 +1,25 @@
 .container {
-    position: relative; 
-    margin: 2rem 0 0;
-    padding: 1rem 0 1.5rem;
+  position: relative;
+  margin: 2rem 0 0;
+  padding: 1rem 0 1.5rem;
 }
 .container::before {
-    position: absolute;
-    content: "";
-    width: 100vw;
-    height: 105%;
-    left: -7%;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: var(--primary);
-    z-index: -2;
+  position: absolute;
+  content: '';
+  width: 100vw;
+  height: 125%;
+  left: -7%;
+  top: 60%;
+  transform: translateY(-50%);
+  background-color: var(--primary);
+  z-index: -2;
 }
 .testimonials-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-    gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 1.5rem;
 }
 .testimonials-item {
-    display: flex;
-    flex-grow: 1;
+  display: flex;
+  flex-grow: 1;
 }

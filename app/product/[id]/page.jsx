@@ -10,7 +10,8 @@ const ProductPage = async ({ params }) => {
   const data = await getProductInfo(id);
 
   return (
-    <div className="global--container__main">
+    
+    <section className="global__container--main">
       <div className={styles['product-container']}>
         <div className={styles['image-section']}>
           <div className={styles['image-background']} />
@@ -19,7 +20,7 @@ const ProductPage = async ({ params }) => {
           </div>
         </div>
         <div className={styles['content-section']}>
-          <Typography gutterBottom={false} type="h4">
+          <Typography gutterBottom={false} type="h4" component="h1">
             {data.name}
           </Typography>
           <Typography type="subheading1">
@@ -49,7 +50,7 @@ const ProductPage = async ({ params }) => {
           </Button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
