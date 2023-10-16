@@ -70,7 +70,7 @@ const Footer = () => {
         <div className={styles.content}>
           <div className={styles.item}>
             <div className={styles.about}>
-              <Typography type="subheading1">About us</Typography>
+              <Typography type="subheading1">About for us</Typography>
               <Typography type="body1">
                 We are a leading provider of high-quality medical solutions
                 based in Bhivani, Haryana. With a focus on excellence, we offer
