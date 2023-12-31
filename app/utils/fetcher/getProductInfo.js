@@ -1,5 +1,5 @@
-import table1 from '../../../public/images/table.png';
-import table2 from '../../../public/images/table-2.png';
+import table1 from '../../../public/images/test-image.webp';
+import table2 from '../../../public/images/test-image2.webp';
 import staticData from '../../components/products/defaultData.json';
 export const getProductInfo = async (id) => {
   const tableImageArray = [table1, table2];
@@ -19,7 +19,7 @@ export const getProductInfo = async (id) => {
       img: table1,
       images: tableImageArray,
     };
-  }else {
+  } else {
     return null;
   }
 };

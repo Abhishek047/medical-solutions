@@ -1,0 +1,28 @@
+.slider-container {
+    --padding: 8px;
+    --half-padding: 4px;
+    --border-radius-component: 2px; 
+}
+.slider-container {
+    display: flex;
+    position: relative;
+    gap: 4px;
+}
+.slider-item {
+    padding: var(--half-padding) var(--padding);
+    cursor: pointer;
+    border-radius: var(border-radius-component);
+}
+.slider-item:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: #eaeaea;
+}
+.slider-bar {
+    position: absolute;
+    height: 3px;
+    bottom: 0px;
+    left: 0;
+    background-color: var(--primary);
+    transition: all var(--timing) ease-in-out;
+    border-radius: var(--border-radius-component);
+}
