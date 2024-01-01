@@ -19,7 +19,7 @@
   --grey: #e5e5e5;
   --background-main: #ffffff;
   --background-dark-main: #eae0ff;
-  --error: #fa360a;
+  --error: #f16242;
   --success-rgb: 0, 189, 86;
   --success: #00bd56;
   --info: #207dff;
@@ -54,7 +54,8 @@
   --timing: 400ms;
   --short-timing: 100ms;
   --nav-z-index: 100;
-  --dialog-z-index: 1000;
+  --dialog-z-index: 10000;
+  --dialog-z-index-content: 10001;
 }
 .icon__base {
   width: 24px;
@@ -83,6 +84,10 @@ body {
 }
 .nav-bar-margin {
   margin-top: 4rem;
+}
+.feather-helperText {
+  width: 10px;
+  height: 10px;
 }
 .tippy-box[data-theme~='primary'] {
   background-color: rgba(var(--secondary-blue-rgb), 0.3);
@@ -113,52 +118,3 @@ body {
   padding: 0.35rem;
   padding-bottom: none;
 }
-/* starting ENTER animation */
-.entry-text-enter {
-  opacity: 0;
-}
-
-/* ending ENTER animation */
-.entry-text-enter-active {
-  opacity: 1;
-  transition: all 1000ms ease-in-out;
-  transition-delay: 500ms;
-}
-
-/* starting EXIT animation */
-.entry-text-exit {
-  position: absolute;
-  top: 0;
-  opacity: 1;
-}
-
-/* ending EXIT animation */
-.entry-text-exit-active {
-  position: absolute;
-  top: 0;
-  opacity: 0;
-  transform: translateX(200%);
-  transition: all 500ms ease-in-out;
-}
-@keyframes entryBlock {
-  0% {
-    width: '0%';
-    left: '0';
-  }
-  50% {
-    width: '100%';
-    left: '0';
-  }
-  100% {
-    width: '0%';
-    left: '100%';
-  }
-};
-@keyframes entryText {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-};

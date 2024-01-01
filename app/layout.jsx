@@ -1,4 +1,5 @@
 import './globals.css';
+import './global.animation.css';
 import { Nunito } from 'next/font/google';
 import { Navbar } from './components/navbar/Navbar';
 import 'tippy.js/dist/tippy.css';

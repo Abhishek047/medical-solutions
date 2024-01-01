@@ -1,41 +1,41 @@
 .feature {
-    position: relative;
-    border-radius: 2px;
-    padding: 0.4rem 1rem;
-    background-color: var(--background-main);
-    text-transform: capitalize;
-    color: inherit;
-    z-index: 7;
-    width: fit-content;
-    font-weight: 700;
-    margin: 20px 5;
-    text-align: center;
-    min-width: 200px;
-    box-shadow: var(--shadow-2);
+  position: relative;
+  border-radius: 2px;
+  padding: 0.4rem 1rem;
+  background-color: var(--background-main);
+  text-transform: capitalize;
+  color: inherit;
+  z-index: 7;
+  width: fit-content;
+  font-weight: 700;
+  margin: 20px 5;
+  text-align: center;
+  min-width: 200px;
+  box-shadow: var(--shadow-2);
 }
 .feature::before {
-    position: absolute;
-    content: "";
-    z-index: -1;
-    top: 45%;
-    left: -15%;
-    width: 15%;
-    height: 5px;
-    border-radius: 0px 2px 2px 0px;
+  position: absolute;
+  content: '';
+  z-index: -1;
+  top: 53%;
+  left: -15%;
+  width: 15%;
+  height: 5px;
+  border-radius: 0px 2px 2px 0px;
 }
 .feature-primary {
-    color: var(--primary);
-    /* border: 3px solid var(--primary); */
+  color: var(--primary);
+  /* border: 3px solid var(--primary); */
 }
 .feature-secondary {
-    color: var(--secondary);
-    /* border: 3px solid var(--secondary); */
+  color: var(--secondary);
+  /* border: 3px solid var(--secondary); */
 }
 .feature-primary::before {
-    background-color: var(--primary);
-    /* border: 3px solid var(--primary); */
+  background-color: var(--primary);
+  /* border: 3px solid var(--primary); */
 }
 .feature-secondary::before {
-    background-color: var(--secondary);
-    /* border: 3px solid var(--secondary); */
+  background-color: var(--secondary);
+  /* border: 3px solid var(--secondary); */
 }

@@ -10,11 +10,9 @@ export const useModalContext = () => {
 export const ModalContextProvider = ({ children }) => {
   const [open, setOpen] = useState(false);
   const openModal = () => {
-    console.log('open');
     setOpen(true);
   };
   const closeModal = () => {
-    console.log('close');
     setOpen(false);
   };
   return (

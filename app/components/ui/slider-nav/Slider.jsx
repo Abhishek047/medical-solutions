@@ -34,6 +34,7 @@ export const Slider = ({ tab, setTab = () => {}, navSliderTabs = [] }) => {
       <div ref={containerRef} className={navStyles['slider-container']}>
         {navSliderTabs.map((elementToRender, index) => (
           <div
+            key={`slider-item-${index}`}
             onClick={() => changeTab(index)}
             className={navStyles['slider-item']}
           >

@@ -1,74 +1,80 @@
 .typography--base {
-    color: inherit;
+  color: inherit;
 }
 /* COLORS */
 .typography--text {
-    color: var(--primary-text);
+  color: var(--primary-text);
+}
+.typography--grey {
+  color: var(--grey);
+}
+.typography--black {
+  color: var(--black);
 }
 .typography--primary {
-    color: var(--primary);
+  color: var(--primary);
 }
 .typography--secondary {
-    color: var(--secondary);
+  color: var(--secondary);
 }
 .typography--error {
-    color: var(--error);
+  color: var(--error);
 }
 .typography--info {
-    color: var(--info);
+  color: var(--info);
 }
 /* SIZES */
 .typography--variant-h1 {
-    font-size: min(4rem, 15vw);
-    font-weight: 600;
+  font-size: min(4rem, 15vw);
+  font-weight: 600;
 }
 .typography--variant-h2 {
-    font-size: min(3em, 12vw);
-    font-weight: 600;
+  font-size: min(3em, 12vw);
+  font-weight: 600;
 }
 
 .typography--variant-h3 {
-    font-size: min(2.5em, 10vw);
-    font-weight: 500;
+  font-size: min(2.5em, 10vw);
+  font-weight: 500;
 }
 
 .typography--variant-h4 {
-    font-size: min(2.125rem, 9vw);
-    font-weight: 500;
+  font-size: min(2.125rem, 9vw);
+  font-weight: 500;
 }
 
 .typography--variant-h5 {
-    font-size: min(1.7rem, 8vw);
-    font-weight: 500;
+  font-size: min(1.7rem, 8vw);
+  font-weight: 500;
 }
 
 .typography--variant-h6 {
-    font-size: min(1.35rem, 7vw);
-    font-weight: 500;
+  font-size: min(1.35rem, 7vw);
+  font-weight: 500;
 }
 
 .typography--variant-subheading1 {
-    font-size: 1.1rem;
-    font-weight: 500;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 .typography--variant-subheading2 {
-    font-size: 0.875rem;
-    font-weight: 500;
+  font-size: 0.875rem;
+  font-weight: 500;
 }
 
 .typography--variant-body1 {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .typography--variant-body1 {
-    font-size: 0.875rem;
+  font-size: 0.875rem;
 }
 
 .typography--variant-caption {
-    font-size: 0.675rem;
+  font-size: 0.675rem;
 }
 /* gutters */
 .typography--gutter-bottom {
-    margin-bottom: 0.4em;
+  margin-bottom: 0.4em;
 }

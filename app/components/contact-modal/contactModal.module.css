@@ -1,0 +1,63 @@
+.contact-modal-container {
+  width: 70vw;
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  min-height: 300px;
+  height: 100%;
+  background-color: var(--background-main);
+  border-radius: var(--border-radius);
+  padding-bottom: 2rem;
+}
+.top-nav {
+  flex-basis: 100%;
+  background-color: var(--black);
+  box-shadow: var(--shadow-2);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+.nav-action {
+  margin-left: auto;
+}
+.icon-styles {
+  color: var(--grey);
+  width: 30px;
+  height: 30px;
+}
+.modal-heading {
+  text-transform: uppercase;
+  color: var(--grey);
+}
+.contact-modal-content {
+  padding: 1rem 2rem;
+  flex-basis: 60%;
+}
+.contact-modal-image {
+  padding: 1rem 2rem;
+  flex-basis: 40%;
+  position: relative;
+}
+.contact-modal-image-background {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  z-index: 0;
+  background-color: var(--secondary);
+  width: 120%;
+  height: 200%;
+}
+.contact-modal-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.contact-modal-grid[data-grid-size='12'] .contact-modal-grid-item {
+  flex-basis: 100%;
+}
+.contact-modal-grid-item[data-grid-item-size='6'] {
+  flex-basis: 49% !important;
+}
+.button-styles {
+  width: 100%;
+}
