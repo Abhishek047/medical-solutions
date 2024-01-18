@@ -2,51 +2,27 @@
 import { Typography } from '../ui/typography/Typography';
 import styles from './footer.module.css';
 import global from '../../global.module.css';
-import whatsapp from '../../../public/images/whatsapp.svg';
-import mail from '../../../public/images/gmail-logo.svg';
-import address from '../../../public/images/address-book.svg';
 import Image from 'next/image';
-import { BookOpen, Box, FileText, Lock, Phone } from 'react-feather';
 import { FooterHeading } from './FooterHeading';
 import { useModalContext } from '@/app/context/contactModalContext';
+import { CONTACTS, LINKS_STATIC } from './helpers';
 
-const CONTACTS = [
-  {
-    icon: address,
-    text: 'Near Dog Farm, Kaunt Road, Bhiwani',
-  },
-  {
-    icon: whatsapp,
-    text: '+91 8222823722, +91 8885800151',
-  },
-  {
-    icon: mail,
-    text: 'hindostan23@gmail.com',
-  },
-];
-
-const LINKS_STATIC = [
-  {
-    text: 'Products',
-    Icon: Box,
-  },
-  {
-    text: 'About',
-    Icon: BookOpen,
-  },
-  {
-    text: 'Contact',
-    Icon: Phone,
-  },
-  {
-    text: 'Privacy policy',
-    Icon: Lock,
-  },
-  {
-    text: 'Terms and conditions',
-    Icon: FileText,
-  },
-];
+export const ContactInfoSection = () => {
+  return (
+    <>
+      {CONTACTS.map((item) => (
+        <div key={item.text} className={styles['icon-pack']}>
+          <div className={styles['image-container']}>
+            <Image src={item.icon} alt="whatsapp-image" fill />
+          </div>
+          <Typography gutterBottom={false} type="body1">
+            {item.text}
+          </Typography>
+        </div>
+      ))}
+    </>
+  );
+};
 
 const Footer = () => {
   const { openModal } = useModalContext();
@@ -83,16 +59,7 @@ const Footer = () => {
           <div className={styles.item}>
             <div className={styles.contact}>
               <Typography type="subheading1">Contact</Typography>
-              {CONTACTS.map((item) => (
-                <div key={item.text} className={styles['icon-pack']}>
-                  <div className={styles['image-container']}>
-                    <Image src={item.icon} alt="whatsapp-image" fill />
-                  </div>
-                  <Typography gutterBottom={false} type="body1">
-                    {item.text}
-                  </Typography>
-                </div>
-              ))}
+              <ContactInfoSection />
             </div>
           </div>
           <div className={styles.item}>

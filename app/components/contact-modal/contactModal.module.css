@@ -7,7 +7,6 @@
   height: 100%;
   background-color: var(--background-main);
   border-radius: var(--border-radius);
-  padding-bottom: 2rem;
 }
 .top-nav {
   flex-basis: 100%;
@@ -37,6 +36,7 @@
   padding: 1rem 2rem;
   flex-basis: 40%;
   position: relative;
+  overflow: hidden;
 }
 .contact-modal-image-background {
   position: absolute;
@@ -60,4 +60,41 @@
 }
 .button-styles {
   width: 100%;
+  display: flex;
+  align-items: center;
+}
+.button-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 0.4rem;
+}
+.modal-image {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  width: 80%;
+  height: auto;
+  z-index: 2;
+}
+.contact-modal-icon {
+  margin-top: 1rem;
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+.contact-modal-icon-item_icon-container {
+  padding: 4px 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--primary);
+  color: var(--black);
+  box-shadow: var(--shadow-2);
+  transition: all 0.2s ease-in-out;
+}
+.contact-modal-icon-item_icon-container:hover {
+  transform: scale(1.05);
+}
+.contact-modal-icon-item_icon {
+  width: 12px;
+  height: 12px;
 }

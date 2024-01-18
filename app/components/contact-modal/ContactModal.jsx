@@ -5,37 +5,10 @@ import { Modal } from '../ui/modal/Modal';
 import { useState } from 'react';
 import { TextInput } from '../ui/inputs/TextInput';
 import { Typography } from '../ui/typography/Typography';
-import { X } from 'react-feather';
+import { Send, X } from 'react-feather';
 import Button from '../ui/buttons/Button';
-
-const validations = {
-  name: (value) => {
-    if (value.length < 3) {
-      return 'Please enter a name more than 3 letters';
-    }
-  },
-  email: (value) => {
-    const regex = new RegExp(
-      "^[a-z0-9!#$%&'*+/=?^_{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_{|}~-]+)@(?:[a-z0-9](?:[a-z0-9-][a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"
-    );
-    if (!regex.test(value)) {
-      return 'Please enter a valid email';
-    }
-  },
-  number: (value) => {
-    const regex = new RegExp(
-      '^(\\+\\d{1,2}\\s?)?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}$'
-    );
-    if (!regex.test(value)) {
-      return 'Please enter a valid number';
-    }
-  },
-  message: (value) => {
-    if (value.length < 3) {
-      return 'Please enter a message more than 3 letters';
-    }
-  },
-};
+import svg from '../../../public/images/contact-us.svg';
+import { SHOW_CONTACT, validations } from './helpers';
 
 export const ContactModal = () => {
   const { isOpen, closeModal } = useModalContext();
@@ -89,7 +62,6 @@ export const ContactModal = () => {
       });
     }
   };
-
   return (
     <Modal open={isOpen} handleClose={closeModal}>
       <div className={styles['contact-modal-container']}>
@@ -170,12 +142,31 @@ export const ContactModal = () => {
                 type="filled"
               >
                 <span>Submit</span>
+                <Send className={styles['button-icon']} />
               </Button>
+            </div>
+            <div
+              className={`${styles['contact-modal-grid-item']} ${styles['contact-modal-icon']}`}
+            >
+              {SHOW_CONTACT.map((item) => (
+                <div
+                  className={styles['contact-modal-icon-item_icon-container']}
+                >
+                  <item.icon
+                    className={styles['contact-modal-icon-item_icon']}
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>
         <div className={styles['contact-modal-image']}>
           <div className={styles['contact-modal-image-background']} />
+          <img
+            className={styles['modal-image']}
+            alt="contact-image"
+            src={svg.src}
+          />
         </div>
       </div>
     </Modal>
